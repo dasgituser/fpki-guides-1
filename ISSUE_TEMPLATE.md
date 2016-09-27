@@ -1,9 +1,15 @@
-#### File(s) Used for Adding/Updating Content: ####
+#### Description of Issue: ####
 
 
-#### References (i.e. Source Docs / Files): ####
+#### Details of Issue: ####
 
 
-#### High-Level Description of Issue: ####
+#### References (Docs, Links, Files): ####
+
+
+#### If a New Page or Content is Needed, Expected Outcomes: ####
+
+
+#### Link to the Content Page for Contributors: ####
 
 
