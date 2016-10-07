@@ -42,7 +42,7 @@ Similar to other PKIs, the Federal PKI has defined their own set of rules, or ce
 
 An example of a certificate policy is demonstrated to the right. If you lookup this policy in the Federal PKI Certificate Policy doc, you'll see that the policy identifier is mapped to the policy called *id-fpki-common-policy*. **NOTE: (Add brief description of what id-fpki-common-policy means).**
 
-The degree to which a certificate can be trusted depends upon the policies associated with the certificate. Then, as long as a certificate is valid, the certificate can be used for its intended purpose(s).   
+An application can also establish trust by means of certificate policies by requiring the requesting user or device to include specific certificate policies or else they are rejected.    
 
 ### What are Certificate Revocation Lists ###
 Various events can occur that require a certificate (or a set of certificates) to no longer be trusted.  When those events occur, the certificate needs to be revoked and Relying Parties notified,  Examples of such events include:
