@@ -3,19 +3,51 @@ layout: default
 title: CRLs And Certificates
 permalink: /crls/
 ---
+<div style="float:right; padding:10px; margin-right:20px; border-radius:10px; width:180px; height:40px; box-shadow:3px 3px 5px 0px; text-align:center; background-color:#CCC; color:#666666">
+<div style="color:#000000">
+<em>Introduction</em>
+</div>
+</div>
 
-This section will help you quickly understand the concept of and relationship between public key certificates (also known as digital certificates), certificate policy, and certificate revocation lists. The section will also provide you with important links and information pertaining to the  Federal PKI Trust Infrastructure Certification Authorities (CAs) that are commonly requested by Federal agencies.
+This section will help you quickly understand the basics of Federal PKI certificates, certificate policy, and certificate revocation lists (CRLs). This section will also provide you with commonly requested Federal PKI links.
 
-1. [Certificate Policy](#certificate-policy)
-2. [Public Key Certificates](#public-key-certificates)
-3. [Certificate Revocation Lists](#certificate-revocation-lists)
-4. [Illustration of a Certificate and CRL](#illustration-of-a-certificate-and-crl)
-5. [Federal PKI CRLs and Certificates](#federal-pki-crls-and-certificates)
-6. [Federal PKI Certificate Polices and Profiles](#federal-pki-certificate-polices-and-profiles)
+1. [What are Certificates?](#public-key-certificates) 
+2. [What is a Certificate Policy?](#certificate-policy)
+3. [What are Certificate Revocation Lists (CRLs)?](#certificate-revocation-lists)
+4. [Links to Commonly Requested Federal PKI CRLs and Certificates?](#federal-pki-crls-and-certificates)
+5. [Where can I find the Federal Certificate Policies?](#federal-pki-certificate-polices-and-profiles)
 
-### **Certificate Policy**
+### What are Certificates ###
 
-The Federal PKI helps Relying Parties make well-informed decisions (like what PKI credentials to accept for what purposes) via best-practice technical, operating, and policy requirements.  Much of that material directly addresses two essential PKI elements: 
+![Example of certificate fields](https://raw.githubusercontent.com/djpackham/fpki-guides/gh-pages/img/certFields.png){:style="float:right"}
+
+Certificates are files that can be used for gaining access to networks, applications, digitally signing, encrypting, or creating trusted connections. You can review [Details of a PIV Credential](https://gsa.github.io/piv-guides/details/) to learn more about viewing, exporting and understanding PIV certificates. You can also review the [HTTPS-Only Standard](https://https.cio.gov/certificates/) to learn more about certificates use in HTTPS connections.
+
+A certificate can be created for a person or device. A certificate includes specific identifying information about the person/device, the issuer of the certificate, the purpose(s) of the certificate, and other information to verify if the certificate is valid. See the image to the right for an example of the common fields/values you'd find in a certificate.
+
+Similar to a paper certificate, certificates are made valid when they are signed by a recognized and trustworthy authority, known as a Certificate Authority (CA).
+
+#### Quick Facts ####
+ - A certificate is a form of identification
+ - Certificates are associated with the individual's or device's public key.
+ - The corresponding private key contains unique code that is not shared with any subscriber or application.
+ - The private key verifies the public key in PKI transactions.
+ - The certificate containing the public key is used by PKI applications to identify the user.
+ - The Certification Authority is the controlling application that determines that the individual with a certificate is who they say they are within a specified level of assurance.
+ - All certificates have the CA’s signature on the certificate for authenticity.
+ - The public/private key system allows data encrypted by one key to be decrypted by the other.
+
+### What is a Certificate Policy ###
+
+![Example of certificate fields](https://raw.githubusercontent.com/djpackham/fpki-guides/gh-pages/img/certPolicy.PNG){:style="float:right"}
+
+Certificate are not all used for the same reason or issued by the same Certificate Authority. Some certificates may be used for digitally signing a document, another certificate may be used for logging into a website. In simple terms, we can say that a certificate policy is a set of rules used to define the use a certificate.
+
+Similar to other Public Key Infrastructures, the Federal PKI has defined their rules for certificates or certificate policies, in a document called X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework. This document includes much more than just the 10 defined set of certificate policies. It also include the architecture, procedures, controls, audits, etc., related to running the Federal PKI.
+
+An example of a certificate policy is demonstrated to the right. If you lookup this policy in the Federal PKI Certificate Policy doc, you'll see that the policy identifier is mapped to *id-fpki-common-policy*
+
+The Federal PKI helps create best-practice technical, operating, and policy requirements.  Much of that material directly addresses two essential PKI elements: 
 
 - **Certificates**; and 
 - **Certificate Revocation Lists** (almost always referred to as CRLs)
@@ -24,13 +56,7 @@ The degree to which a Relying Party can rely on (trust) a certificate for any pu
 
 > The more strict the certificate policy associated with the certificate, the more a Relying Party can trust the certificate.  
 
-### **Public Key Certificates**
-
-Public key certificates are signed data structures that bind attributes of an entity (e.g., person or device) with its corresponding public key. Certificates are signed by a recognized and trustworthy CA, thus providing a guarantee that a specific public key belongs to a specific entity, and that the entity possesses the corresponding private key as well.
-
-Certificates can be used to perform various tasks such as authentication, digital signing, and encryption as specified in the certificate.
-
-### **Certificate Revocation Lists**
+### What are Certificate Revocation Lists ###
 Various events can occur that require a certificate (or a set of certificates) to no longer be trusted.  When those events occur, the certificate needs to be revoked and Relying Parties notified,  Examples of such events include:
 
 - Lost, stolen, damaged, or misused certificate.  
@@ -47,11 +73,11 @@ To notify Relying Parties of revoked certificates, CAs publish Certificate Revoc
 
 > To help Relying Parties find CRLs, CAs make public both a description of how to obtain revocation information for the certificates they publish and an explanation of the consequences of using out of date revocation information.  
 
-### ***Illustration of a Certificate and CRL***
+### Illustration of a Certificate and CRL ###
 
 <img src="/img/crls_diagram1.jpg"/>
 
-### ***Federal PKI CRLs and Certificates***
+### Downloadable Federal PKI CRLs and Certificates ###
 * ***Federal Common Policy Certification Authority (Common or FCPCA)***
 
      * [Common CA Root Certificate](http://http.fpki.gov/fcpca/fcpca.crt)
@@ -88,7 +114,7 @@ To notify Relying Parties of revoked certificates, CAs publish Certificate Revoc
 
      * [Legacy FCPCA CRL](http://fpkia.gsa.gov/CommonPolicy/CommonPolicy%281%29.crl)
 
-### ***Federal PKI Certificate Polices and Profiles***
+### Federal PKI Certificate Polices and Profiles ###
 
 * ***Federal PKI Certificate Policies***
 
