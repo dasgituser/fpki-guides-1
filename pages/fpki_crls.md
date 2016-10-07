@@ -23,9 +23,9 @@ This section will help you quickly understand the basics of Federal PKI certific
 
 Certificates are files that can be used for gaining access to networks, applications, digitally signing, encrypting, or creating trusted connections. You can review [Details of a PIV Credential](https://gsa.github.io/piv-guides/details/) to learn more about viewing, exporting and understanding PIV certificates. You can also review the [HTTPS-Only Standard](https://https.cio.gov/certificates/) to learn more about certificates use in HTTPS connections.
 
-A certificate can be issued to a person or a device. A certificate includes information about the person/device, the issuer of the certificate, the purpose(s) of the certificate, and other information to verify if the certificate is valid. An example of thecommon fields/values you'd find in a certificate can be seen to the right.
+A certificate can be issued to a person or a device. A certificate includes information about the person/device, the issuer of the certificate, the purpose(s) of the certificate, and other information to verify if the certificate is valid. An example of the common fields/values you'd find in a certificate can be seen to the right.
 
-Similar to a paper certificate, certificates are made valid when they are signed by a recognized and trustworthy authority, known as a Certificate Authority (CA). Learn more about Certificate Authorities by viewing the [Certificate Authorities Page](/ca/). Also learn more about the different types of certificates by reviewing the [What are the Different Types of Certificates and their Purpose page](/pki/).
+Similar to a paper certificate, certificates are made valid when they are signed by a recognized and trustworthy authority, known as a Certificate Authority (CA). Learn more about Certificate Authorities by reviewing the [Certificate Authorities page](/ca/). Also, learn more about the different types of certificates by reviewing the [What are the Different Types of Certificates and their Purpose page](/pki/).
 
 ### What is a Certificate Policy ###
 
