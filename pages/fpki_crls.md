@@ -23,7 +23,7 @@ This section will help you quickly understand the basics of Federal PKI certific
 
 Certificates are files that can be used for gaining access to networks, applications, digitally signing, encrypting, or creating trusted connections. You can review [Details of a PIV Credential](https://gsa.github.io/piv-guides/details/) to learn more about viewing, exporting and understanding PIV certificates. You can also review the [HTTPS-Only Standard](https://https.cio.gov/certificates/) to learn more about certificates use in HTTPS connections.
 
-A certificate can be issued to a person or a device. A certificate includes information about the person/device, the issuer of the certificate, the purpose(s) of the certificate, and other information to verify if the certificate is valid. See the image to the right for an example of the common fields/values you'd find in a certificate.
+A certificate can be issued to a person or a device. A certificate includes information about the person/device, the issuer of the certificate, the purpose(s) of the certificate, and other information to verify if the certificate is valid. An example of thecommon fields/values you'd find in a certificate can be seen to the right.
 
 Similar to a paper certificate, certificates are made valid when they are signed by a recognized and trustworthy authority, known as a Certificate Authority (CA). Learn more about Certificate Authorities by viewing the [Certificate Authorities Page](/ca/). Also learn more about the different types of certificates by reviewing the [What are the Different Types of Certificates and their Purpose page](/pki/).
 
@@ -31,16 +31,16 @@ Similar to a paper certificate, certificates are made valid when they are signed
 
 ![Example of certificate fields](https://raw.githubusercontent.com/djpackham/fpki-guides/gh-pages/img/certPolicy.PNG){:style="float:right"}
 
-Certificate are not all used for the same reason or issued by the same Certificate Authority. Some certificates may be used for digitally signing a document, another certificate may be used for logging into a website. In simple terms, we can say that a certificate policy is a set of rules used to define the use a certificate.
+All certificates are not used for the same reason or issued by the same Certificate Authority. Some certificates may be used for digitally signing a document, another certificate may be used for logging into a website. In simple terms, we can say that a certificate policy is a set of rules used to define the use a certificate.
 
-Similar to other Public Key Infrastructures, the Federal PKI has defined their rules for certificates or certificate policies, in a document called X.509 Certificate Policy For The U.S. Federal PKI Common Policy Framework. This document includes much more than just the 10 defined set of certificate policies. It also include the architecture, procedures, controls, audits, etc., related to running the Federal PKI.
+Similar to other PKIs, the Federal PKI has defined their rules for certificates, or certificate policies. In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) Policy documents.  This table contains links to the most recent documents:
+
+| Certificates    | Policy Update Date  | Link to Profile Information|
+| -------------            |:----:               |:----:|
+| PIV Certificates           | May 5, 2015             | [Worksheets 5, 6, 8 and 9 in this document](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNP2AAO&field=File__Body__s)|
+| PIV _Interoperable_ Certificates           | May 5, 2015             | [Worksheets 4, 5, 6, and 7 in this document](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN9YAAW&field=File__Body__s)|
 
 An example of a certificate policy is demonstrated to the right. If you lookup this policy in the Federal PKI Certificate Policy doc, you'll see that the policy identifier is mapped to *id-fpki-common-policy*
-
-The Federal PKI helps create best-practice technical, operating, and policy requirements.  Much of that material directly addresses two essential PKI elements: 
-
-- **Certificates**; and 
-- **Certificate Revocation Lists** (almost always referred to as CRLs)
 
 The degree to which a Relying Party can rely on (trust) a certificate for any purpose depends upon the policies associated with that certificate. Then,   as long as a certificate is valid (not expired, not revoked, legitimate CA signature), the certificate can be relied upon and used for its intended purpose(s). 
 
