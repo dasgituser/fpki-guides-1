@@ -33,18 +33,16 @@ Similar to a paper certificate, certificates are made valid when they are signed
 
 All certificates are not used for the same reason or issued by the same Certificate Authority. Some certificates may be used for digitally signing a document, another certificate may be used for logging into a website. In simple terms, we can say that a certificate policy is a set of rules used to define the use of a certificate.
 
-Similar to other PKIs, the Federal PKI has defined their own set of rules, or certificate policies, for certificates. In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) Policy documents.  This table contains links to the most recent documents:
+Similar to other PKIs, the Federal PKI has defined their own set of rules, or certificate policies, for Federal certificates. In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) Policy documents. This table contains links to the most recent documents:
 
 | Certificates    | Policy Update Date  | Link to Profile Information|
 | -------------            |:----:               |:----:|
 | PIV Certificates           | May 5, 2015             | [Worksheets 5, 6, 8 and 9 in this document](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TNP2AAO&field=File__Body__s)|
 | PIV _Interoperable_ Certificates           | May 5, 2015             | [Worksheets 4, 5, 6, and 7 in this document](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN9YAAW&field=File__Body__s)|
 
-An example of a certificate policy is demonstrated to the right. If you lookup this policy in the Federal PKI Certificate Policy doc, you'll see that the policy identifier is mapped to *id-fpki-common-policy*
+An example of a certificate policy is demonstrated to the right. If you lookup this policy in the Federal PKI Certificate Policy doc, you'll see that the policy identifier is mapped to the policy called *id-fpki-common-policy*. **NOTE: (Add brief description of what id-fpki-common-policy means).**
 
-The degree to which a Relying Party can rely on (trust) a certificate for any purpose depends upon the policies associated with that certificate. Then,   as long as a certificate is valid (not expired, not revoked, legitimate CA signature), the certificate can be relied upon and used for its intended purpose(s). 
-
-> The more strict the certificate policy associated with the certificate, the more a Relying Party can trust the certificate.  
+The degree to which a certificate can be trusted depends upon the policies associated with the certificate. Then, as long as a certificate is valid, the certificate can be and used for its intended purpose(s).   
 
 ### What are Certificate Revocation Lists ###
 Various events can occur that require a certificate (or a set of certificates) to no longer be trusted.  When those events occur, the certificate needs to be revoked and Relying Parties notified,  Examples of such events include:
