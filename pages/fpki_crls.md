@@ -29,8 +29,6 @@ Similar to a paper certificate, certificates are made valid when they are signed
 
 ### What is a Certificate Policy ###
 
-![Example of certificate fields](https://raw.githubusercontent.com/djpackham/fpki-guides/gh-pages/img/certPolicy.PNG){:style="float:right"}
-
 All certificates are not used for the same reason or issued by the same Certificate Authority. Some certificates may be used for digitally signing a document, another certificate may be used for logging into a website. In simple terms, we can say that a certificate policy is a set of rules used to define the use of a certificate.
 
 Similar to other PKIs, the Federal PKI has defined their own set of rules, or certificate policies, for Federal certificates. In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) Policy documents. This table contains links to the most recent documents:
@@ -41,6 +39,8 @@ Similar to other PKIs, the Federal PKI has defined their own set of rules, or ce
 | PIV _Interoperable_ Certificates           | May 5, 2015             | [Worksheets 4, 5, 6, and 7 in this document](https://www.idmanagement.gov/IDM/servlet/fileField?entityId=ka0t0000000TN9YAAW&field=File__Body__s)|
 
 An example of a certificate policy is demonstrated to the right. If you lookup this policy in the Federal PKI Certificate Policy doc, you'll see that the policy identifier is mapped to the policy called *id-fpki-common-policy*. **NOTE: (Add brief description of what id-fpki-common-policy means).**
+
+![Example of certificate fields](https://raw.githubusercontent.com/djpackham/fpki-guides/gh-pages/img/certPolicy.PNG){:style="float:right"}
 
 The degree to which a certificate can be trusted depends upon the policies associated with the certificate. Then, as long as a certificate is valid, the certificate can be and used for its intended purpose(s).   
 
