@@ -31,9 +31,9 @@ Similar to a paper certificate, certificates are made valid when they are signed
 
 ![Example of certificate fields](https://raw.githubusercontent.com/djpackham/fpki-guides/gh-pages/img/certPolicy.PNG){:style="float:right"}
 
-All certificates are not used for the same reason or issued by the same Certificate Authority. Some certificates may be used for digitally signing a document, another certificate may be used for logging into a website. In simple terms, we can say that a certificate policy is a set of rules used to define the use a certificate.
+All certificates are not used for the same reason or issued by the same Certificate Authority. Some certificates may be used for digitally signing a document, another certificate may be used for logging into a website. In simple terms, we can say that a certificate policy is a set of rules used to define the use of a certificate.
 
-Similar to other PKIs, the Federal PKI has defined their rules for certificates, or certificate policies. In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) Policy documents.  This table contains links to the most recent documents:
+Similar to other PKIs, the Federal PKI has defined their own set of rules, or certificate policies, for certificates. In-depth details on the certificate profiles are contained in the current and historical Federal Public Key Infrastructure (FPKI) Policy documents.  This table contains links to the most recent documents:
 
 | Certificates    | Policy Update Date  | Link to Profile Information|
 | -------------            |:----:               |:----:|
