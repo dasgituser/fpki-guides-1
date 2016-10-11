@@ -15,7 +15,7 @@ This section will provide you with commonly requested Federal PKI links.
 
 |Certificate Authority (CA) Root Certificates|Issued Date|Thumbprint Algorithm|Thumbprint|CRLs|CA's DN|Certs Issued By CA|Certs Issued to CA| 
 |---|---|---|---|---|---|---|---|
-|[Federal Common Policy Certificate Authority (FCPCA or Common)](http://http.fpki.gov/fcpca/fcpca.crt)|-|sha1|90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1|[CRL](http://http.fpki.gov/fcpca/fcpca.crl)|cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US|[Certs Issued By FCPCA](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c)|[Certs Issued To FCPCA](http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c)|
+|[Federal Common Policy Certificate Authority (FCPCA or Common)](http://http.fpki.gov/fcpca/fcpca.crt)|12/01/2010|sha1|90 5f 94 2f d9 f2 8f 67 9b 37 81 80 fd 4f 84 63 47 f6 45 c1|[CRL](http://http.fpki.gov/fcpca/fcpca.crl)|cn=Federal Common Policy CA, ou=FPKI, o=U.S. Government, c=US|[Certs Issued By FCPCA](http://http.fpki.gov/fcpca/caCertsIssuedByfcpca.p7c)|[Certs Issued To FCPCA](http://http.fpki.gov/fcpca/caCertsIssuedTofcpca.p7c)|
 |Federal Bridge Certificate Authorty (FBCAP)|-|-|-|[FBCA CRL](http://http.fpki.gov/bridge/fbca.crl), [FBCA 2013 CRL](http://http.fpki.gov/bridge/fbca2013.crl)|-|[Certs Issued By FBCA](http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c)|[Certs Issued To FBCA](http://http.fpki.gov/bridge/caCertsIssuedTofbca2013.p7c)|
 
 * ***SHA-1 Federal Root Certification Authority (SHA1 FRCA)***
