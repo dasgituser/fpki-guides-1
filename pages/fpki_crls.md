@@ -11,11 +11,6 @@ permalink: /crls/
 
 This section will provide you with commonly requested Federal PKI links.
 
-1. [Federal Common Policy Certification Authority (Common or FCPCA)](#federal-common-policy-certification-authorty-(common-or-fcpca))
-2. [Federal Bridge Certificate Authority (Bridge or FBCA)](#federal-bridge-certificate-authority-(bridge-or-fbca))
-3. [SHA-1 Federal Root Certificate Authority (SHA1 FRCA)](#sha-1-federal-root-certificate-authority)
-4. [Legacy Federal Common Policy Certificate Authority](#legacy-federal-common-policy-certificate-authority)
-
 #### Federal Common Policy Certification Authority (Common or FCPCA) ####
 *Note: To request a secure distribution of the Common CA Root Certificate, please contact the [FPKIMA](mailto:fpki-help@gsa.gov)*
 
@@ -41,7 +36,7 @@ This section will provide you with commonly requested Federal PKI links.
 
 * FBCA 2013 CRL: [http://http.fpki.gov/bridge/fbca2013.c](http://http.fpki.gov/bridge/fbca2013.crl)
 
-##### SHA-1 Federal Root Certificate Authority (SHA1 FRCA) ####
+#### SHA-1 Federal Root Certificate Authority (SHA1 FRCA) ####
 
 * P7Cs (Issued By): [http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c](http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c)
 
@@ -49,6 +44,6 @@ This section will provide you with commonly requested Federal PKI links.
 
 * SHA1 FRCA CRL: [http://http.fpki.gov/sha1frca/sha1frca.cr](http://http.fpki.gov/sha1frca/sha1frca.cr)
 
-##### Legacy Federal Common Policy Certificate Authority (Legacy FCPCA) ####
+#### Legacy Federal Common Policy Certificate Authority (Legacy FCPCA) ####
 
 * Legacy FCPCA CRL: [http://fpkia.gsa.gov/CommonPolicy/CommonPolicy(1).crl](http://fpkia.gsa.gov/CommonPolicy/CommonPolicy%281%29.crl)
