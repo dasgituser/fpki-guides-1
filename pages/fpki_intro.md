@@ -14,7 +14,7 @@ The information on this page provides introductory information.
 1. [What is the Federal PKI?](#what-is-the-federal-pki)
 2. [Why is the Federal PKI Important?](#why-is-the-federal-pki-important) 
 3. [What is in the FPKI Guides?](#what-is-in-the-fpki-guides)
-4. [Where Can I Find the Standards?](#where-can-i-find-the-standards)
+4. [Where Can I Find the Policies and Standards?](#where-can-i-find-the-standards)
 
 ### What is the Federal PKI? ###
 
