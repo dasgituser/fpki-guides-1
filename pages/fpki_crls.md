@@ -9,9 +9,30 @@ permalink: /crls/
 </div>
 </div>
 
-This section will provide you with commonly requested Federal PKI links.
+This section will provide you with a brief overview of Certificate Revocation Lists (CRLs) and downloadable links to the commonly requested Federal PKI artifacts.
 
-#### Federal Common Policy Certification Authority (Common or FCPCA) ####
+### Certificate Revocation Lists ###
+Various events can occur that require a certificate (or a set of certificates) to no longer be trusted.  When those events occur, the certificate needs to be revoked and Relying Parties notified,  Examples of such events include:
+
+- Lost, stolen, damaged, or misused certificate.  
+- Compliance issues with or a security breach of the Certification Authority that issued the certificate.  
+- Termination of employment of certificate holder.
+- Certificate holder switches to a different job role (e.g., switching from Role A to Role B, and the certificate is designated for use only by Role A), 
+- Certification Authority that issued the certificate terminates its relationship with the Federal PKI.
+
+> In technical terms, *a certificate should be revoked when the binding between the subject and the subject’s public key defined within a certificate is no longer considered valid*.
+
+To notify Relying Parties of revoked certificates, CAs publish Certificate Revocation Lists (CRLs), which are simple lists of certificates that have been revoked and should no longer be relied upon.  
+
+> Relying Parties Parties should obtain CRLs on an ongoing basis and process them accordingly. CAs publish CRLs on a regular schedule and on an emergency basis - as specified by applicable certificate policy.
+
+> To help Relying Parties find CRLs, CAs make public both a description of how to obtain revocation information for the certificates they publish and an explanation of the consequences of using out of date revocation information.  
+
+### ***Illustration of a Certificate and CRL***
+
+<img src="/img/crls_diagram1.jpg"/>
+
+### Federal Common Policy Certification Authority (Common or FCPCA) ###
 *Note: To request a secure distribution of the Common CA Root Certificate, please contact the [FPKIMA](mailto:fpki-help@gsa.gov)*
 
 * Common CA Root Certificate:   [http://http.fpki.gov/fcpca/fcpca.crt](http://http.fpki.gov/fcpca/fcpca.crt)
@@ -26,7 +47,7 @@ This section will provide you with commonly requested Federal PKI links.
 
 * FCPCA CRL: [http://http.fpki.gov/fcpca/fcpca.cr](http://http.fpki.gov/fcpca/fcpca.cr) 
 
-#### Federal Bridge Certificate Authority (Bridge or FBCA) ####
+### Federal Bridge Certificate Authority (Bridge or FBCA) ###
 
 * P7Cs (Issued By): [http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c](http://http.fpki.gov/bridge/caCertsIssuedByfbca2013.p7c)
 
@@ -36,7 +57,7 @@ This section will provide you with commonly requested Federal PKI links.
 
 * FBCA 2013 CRL: [http://http.fpki.gov/bridge/fbca2013.c](http://http.fpki.gov/bridge/fbca2013.crl)
 
-#### SHA-1 Federal Root Certificate Authority (SHA1 FRCA) ####
+### SHA-1 Federal Root Certificate Authority (SHA1 FRCA) ###
 
 * P7Cs (Issued By): [http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c](http://http.fpki.gov/sha1frca/caCertsIssuedBysha1frca.p7c)
 
@@ -44,6 +65,6 @@ This section will provide you with commonly requested Federal PKI links.
 
 * SHA1 FRCA CRL: [http://http.fpki.gov/sha1frca/sha1frca.cr](http://http.fpki.gov/sha1frca/sha1frca.cr)
 
-#### Legacy Federal Common Policy Certificate Authority (Legacy FCPCA) ####
+### Legacy Federal Common Policy Certificate Authority (Legacy FCPCA) ###
 
 * Legacy FCPCA CRL: [http://fpkia.gsa.gov/CommonPolicy/CommonPolicy(1).crl](http://fpkia.gsa.gov/CommonPolicy/CommonPolicy%281%29.crl)
